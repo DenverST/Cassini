@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		FF339F6021885E26000255BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF339F5F21885E26000255BF /* AppDelegate.swift */; };
-		FF339F6221885E26000255BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF339F6121885E26000255BF /* ViewController.swift */; };
 		FF339F6521885E26000255BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF339F6321885E26000255BF /* Main.storyboard */; };
 		FF339F6721885E28000255BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF339F6621885E28000255BF /* Assets.xcassets */; };
 		FF339F6A21885E28000255BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF339F6821885E28000255BF /* LaunchScreen.storyboard */; };
 		FF339F7521885E28000255BF /* CassiniTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF339F7421885E28000255BF /* CassiniTests.swift */; };
 		FF339F8021885E28000255BF /* CassiniUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF339F7F21885E28000255BF /* CassiniUITests.swift */; };
+		FFC2FD2A21885F11006785C7 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC2FD2921885F11006785C7 /* ImageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,6 @@
 /* Begin PBXFileReference section */
 		FF339F5C21885E26000255BF /* Cassini.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cassini.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF339F5F21885E26000255BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FF339F6121885E26000255BF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FF339F6421885E26000255BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FF339F6621885E28000255BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF339F6921885E28000255BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +46,7 @@
 		FF339F7B21885E28000255BF /* CassiniUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CassiniUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF339F7F21885E28000255BF /* CassiniUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CassiniUITests.swift; sourceTree = "<group>"; };
 		FF339F8121885E28000255BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFC2FD2921885F11006785C7 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +97,10 @@
 		FF339F5E21885E26000255BF /* Cassini */ = {
 			isa = PBXGroup;
 			children = (
-				FF339F5F21885E26000255BF /* AppDelegate.swift */,
-				FF339F6121885E26000255BF /* ViewController.swift */,
+				FFC2FD2921885F11006785C7 /* ImageViewController.swift */,
 				FF339F6321885E26000255BF /* Main.storyboard */,
-				FF339F6621885E28000255BF /* Assets.xcassets */,
-				FF339F6821885E28000255BF /* LaunchScreen.storyboard */,
 				FF339F6B21885E28000255BF /* Info.plist */,
+				FF339F8D21885E4E000255BF /* Supporting Files */,
 			);
 			path = Cassini;
 			sourceTree = "<group>";
@@ -123,6 +121,16 @@
 				FF339F8121885E28000255BF /* Info.plist */,
 			);
 			path = CassiniUITests;
+			sourceTree = "<group>";
+		};
+		FF339F8D21885E4E000255BF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FF339F6821885E28000255BF /* LaunchScreen.storyboard */,
+				FF339F6621885E28000255BF /* Assets.xcassets */,
+				FF339F5F21885E26000255BF /* AppDelegate.swift */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,7 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF339F6221885E26000255BF /* ViewController.swift in Sources */,
+				FFC2FD2A21885F11006785C7 /* ImageViewController.swift in Sources */,
 				FF339F6021885E26000255BF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
