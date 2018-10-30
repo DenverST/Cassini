@@ -41,7 +41,7 @@ class ImageViewController: UIViewController
     @IBOutlet weak var outletScrollView: UIScrollView! {
         didSet {
             outletScrollView.delegate = self
-            outletScrollView.minimumZoomScale = 0.25
+            outletScrollView.minimumZoomScale = 0.03
             outletScrollView.maximumZoomScale = 2.0
             outletScrollView.contentSize = imageView.frame.size
             outletScrollView.addSubview(imageView)
