@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF0F7B80218915C1001348A2 /* CassiniViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0F7B7F218915C1001348A2 /* CassiniViewController.swift */; };
 		FF339F6021885E26000255BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF339F5F21885E26000255BF /* AppDelegate.swift */; };
 		FF339F6521885E26000255BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF339F6321885E26000255BF /* Main.storyboard */; };
 		FF339F6721885E28000255BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF339F6621885E28000255BF /* Assets.xcassets */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FF0F7B7F218915C1001348A2 /* CassiniViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CassiniViewController.swift; sourceTree = "<group>"; };
 		FF339F5C21885E26000255BF /* Cassini.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cassini.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF339F5F21885E26000255BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF339F6421885E26000255BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				FFC2FD2921885F11006785C7 /* ImageViewController.swift */,
 				FFC2FD2B21886265006785C7 /* DemoURL.swift */,
 				FF339F6321885E26000255BF /* Main.storyboard */,
+				FF0F7B7F218915C1001348A2 /* CassiniViewController.swift */,
 				FF339F6B21885E28000255BF /* Info.plist */,
 				FF339F8D21885E4E000255BF /* Supporting Files */,
 			);
@@ -270,6 +273,7 @@
 				FFC2FD2A21885F11006785C7 /* ImageViewController.swift in Sources */,
 				FF339F6021885E26000255BF /* AppDelegate.swift in Sources */,
 				FFC2FD2C21886265006785C7 /* DemoURL.swift in Sources */,
+				FF0F7B80218915C1001348A2 /* CassiniViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
