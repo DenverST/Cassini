@@ -10,7 +10,9 @@ import Foundation
 
 struct DemoURL
 {
-    static let uwa = URL(string: "https://i2.wp.com/pelicanmagazine.com.au/wp-content/uploads/2018/03/university-western-australia-uwa-tower01.jpg?resize=700%2C500")
+//    static let uwa = URL(string: "https://i2.wp.com/pelicanmagazine.com.au/wp-content/uploads/2018/03/university-western-australia-uwa-tower01.jpg?resize=700%2C500")
+    
+    static let uwa = URL(string: "http://4.bp.blogspot.com/-Y3tzwoKndQk/TZbgms0shVI/AAAAAAAAA_c/MKV5rRX7_4A/s1600/Photo-0120.jpg")
     
     static var NASA: Dictionary<String,URL> = {
         let NASAURLStrings = [

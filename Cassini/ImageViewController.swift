@@ -27,7 +27,6 @@ class ImageViewController: UIViewController
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.addSubview(imageView)
         imageURL = DemoURL.uwa
     }
     
@@ -38,8 +37,17 @@ class ImageViewController: UIViewController
         }
     }
     
-    private var imageView = UIImageView()
+    fileprivate var imageView = UIImageView()
     
+    @IBOutlet weak var outletScrollView: UIScrollView! {
+        didSet {
+            outletScrollView.delegate = self
+            outletScrollView.minimumZoomScale = 0.25
+            outletScrollView.maximumZoomScale = 2.0
+            outletScrollView.contentSize = imageView.frame.size
+            outletScrollView.addSubview(imageView)
+        }
+    }
     private var image: UIImage? {
         get {
             return imageView.image
@@ -47,6 +55,14 @@ class ImageViewController: UIViewController
         set {
             imageView.image = newValue
             imageView.sizeToFit()
+            outletScrollView?.contentSize = imageView.frame.size
         }
+    }
+}
+
+extension ImageViewController : UIScrollViewDelegate
+{
+    func viewForZooming(in scrollView: UIScrollView) -> UIView? {
+        return imageView
     }
 }

@@ -16,12 +16,27 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TGS-kQ-miq">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="TGS-kQ-miq" secondAttribute="trailing" id="6NR-yl-3Y6"/>
+                            <constraint firstItem="TGS-kQ-miq" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="HOM-o3-VCg"/>
+                            <constraint firstItem="TGS-kQ-miq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="N8y-VK-QVV"/>
+                            <constraint firstItem="TGS-kQ-miq" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="mML-Wz-abg"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="outletScrollView" destination="TGS-kQ-miq" id="uKa-eU-c4f"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="53.600000000000001" y="27.436281859070466"/>
         </scene>
     </scenes>
 </document>
